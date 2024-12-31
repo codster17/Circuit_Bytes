@@ -1,84 +1,117 @@
-# Mandatory settings
+# main text of home
+title: John Doe
+bio: A Person who travels the world eating noodles
 
-blog_theme: light # Or use dark
-name: Chalk
-paginate: 25
-url: http://chalk.nielsenramon.com
+# twitter summary info
+description: A blog about technology and stuff related
 
+# if it's an external image, update below for true
+# better with square images
+external-image: false
+picture: assets/images/profile.jpg
 
-# Optional settings
+# your site color theme, true for dark theme, 
+# false to light theme, auto to switch with system.
+dark-theme: auto
 
-about_enabled: true # Change to true if you wish to show an icon in the navigation that redirects to the about page
-discus_identifier: chalk-1 # Add your Disqus identifier
-ga_analytics: UA-28631876-6 # Add your GA Tracking Id
-local_fonts: false # Change to true if you wish to use local fonts
-rss_enabled: true # Change to false if not
-scrollappear_enabled: true # Change to false to disable
-tag_nav_enabled: false # Change to true if you wish to show an additional 'tag-list' navigation below the header
-theme_toggle: false # Change to true if you wish to show an icon in the navigation for dynamic theme toggling
-social:
-  dribbble: nielsenramon # Add your Dribbble handle
-  facebook: # Add your Facebook handle
-  flickr: # Add your Flickr handle
-  github: nielsenramon # Add your GitHub handle
-  linkedin: # Add your LinkedIn handle
-  twitter: nielsenramon # Add your Twitter handle
-  email: # Add your Email address
-  bitcoin: # Add your Bitcoin link or address
-  ethereum: # Add your Ethereum link or address
-  gitlab: # Add your GitLab handle
-  youtube: # Add your Youtube handle
-  twitch: # Add your Twitch handle
-  discord: # Add you Discord server invitation ID
-  tumblr: # Add your Tumblr handle
-  bitbucket: # Add your Bitbucket handle
-  docker: # Add your Docker Hub handle
-  instagram: # Add your Instagram handle
-  keybase: # Add your Keybase handle
-  medium: # Add your Medium handle
-  spotify: # Add your Spotify handle
-  stackoverflow: # Add your Stack Overflow ID number
-  steam: # Add your Steam handle
+# If you want to include your resume, set to true
+# and specify source (external or local).
+resume: true
+resume-external: true
+resume-url: https://google.com/?q=my+resume
 
+url: https://sergiokopplin.github.io/indigo
+# your url: https://USERNAME.github.io
 
-# Important settings (change at own risk)
+permalink: /:title/
 
-assets:
-  plugins:
-    css: { autoprefixer: {}}
-    img: { optim: {}}
-  source_maps: false
-  sources:
-    - _assets/icons
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _assets/yarn
-collections:
-  my_tags:
-    output: true
-    permalink: /tag/:slug/
+# To enable google analytics, supply your token below
+# analytics-google: 'UA-MYANALYTICS'
+
+# if you don't want comments in your posts, leave categories empty
+disqus:
+  shortname: github # enter this from your disqus account
+  categories: [blog, project] # only show disqus for posts that have these categories
+
+# if you don't have any of social below, comment the line
+facebook: myfacebook
+twitter: mytwitter
+instagram: myinstagram
+linkedin: mylinkedin
+github: mygithub
+email: myemail@gmail.com
+
+authors:
+  johndoe:
+    name: John Doe
+    bio: A Man who travels the world eating noodles
+    external-image: false
+    picture: assets/images/profile.jpg
+    twitter: johndoe
+  jamesfoster:
+    name: James Foster
+    bio: A Man who develops software with coffee
+    external-image: false
+    picture: assets/images/james.jpg
+    twitter: jamesfoster
+
+# do you want a larger site? change the option below
+# options: [normal, large] | default: normal
+# normal = 560px / large = 810px
+width: normal
+
+# if you don't need projects, comment the *projects* configs below
+projects: true
+
+# if you don't need "about" or "blog", comment them out below
+about: true
+blog: true
+
+# do you want to show the "read time" of the posts?
+read-time: true
+
+# do you want to show the "tags" inside the posts?
+show-tags: true
+
+# related posts inside a post?
+related: true
+
+# Display links for next and previous posts for the specified categories
+post-advance-links: [blog]
+
+# show author block at the end of a post ?
+show-author: true
+
+# do you want some animations?
+animation: true
+
+# add default values to specific pages or layouts
 defaults:
-  -
-    scope:
-      path: ""
-      type: my_tags
+  - scope:
+      path: "" # an empty string here means all files in the project
+      layout: "post"
     values:
-      layout: articles_by_tag
-exclude:
-  - .travis.yml
-  - bin/*
-  - circle.yml
-  - Gemfile
-  - Gemfile.lock
-  - package.json
-  - package-lock.json
-  - README.md
-  - vendor/
-  - yarn.lock
+      # setting all post to not hidden by default,
+      # can be overridden in the front matter for a specific post
+      hidden: false
+
 plugins:
-  - jekyll-assets
-  - jekyll-paginate
-  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-feed
   - jemoji
-paginate_path: /posts/page/:num/
-permalink: posts/:slug
+
+compress_html:
+  ignore:
+    envs:
+      - development
+      - stage
+
+exclude:
+  [
+    "README.md",
+    "Gemfile",
+    "Gemfile.lock",
+    "FAQ.md",
+    "vendor",
+  ]
