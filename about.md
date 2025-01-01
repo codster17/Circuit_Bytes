@@ -4,19 +4,38 @@ layout: page
 ---
 ![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
 
-<p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+# 👨‍🎓 About Me
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+I’m an engineering student with a passion for innovation and problem-solving. My academic journey combines technical knowledge, creativity, and curiosity to tackle real-world challenges. Whether it’s writing code, designing circuits, or building something from scratch, I’m always eager to learn and grow.
+
+---
+
+### 🚀 What Drives Me
+- **Curiosity**: I love exploring how things work and how they can be improved.  
+- **Creativity**: Engineering is my canvas, and I enjoy crafting efficient solutions.  
+- **Growth**: Every project I take on is an opportunity to learn and build.  
+
+---
+
+### 🛠️ My Toolkit
+- **Programming**: C, Python, and Arduino.  
+- **Electronics**: Circuit design, microcontrollers, and prototyping.  
+- **Tools & Software**: Multimeters, oscilloscopes, and simulation software like MATLAB or Proteus.  
+
+---
+
+### 🌱 Current Goals
+- Mastering the **C programming language** to strengthen my software skills.  
+- Working on DIY projects that blend electronics and software.  
+- Learning about emerging technologies in robotics and automation.  
+
+---
+
+### 🤝 Let’s Connect!
+I’m always looking to collaborate, exchange ideas, or simply geek out about tech. Feel free to reach out!
+
+✨ **“Engineering is about turning imagination into reality!”**
+
 
 <h2>Skills</h2>
 
